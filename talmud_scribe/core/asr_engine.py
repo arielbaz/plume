@@ -34,6 +34,7 @@ class Segment:
     end: float
     text: str
     avg_logprob: float = 0.0
+    lang: str = ""          # renseigné par le mode mixte ("fr" / "he")
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -98,6 +99,72 @@ class ASREngine:
             if progress:
                 progress(min(s.end / total, 1.0))
         return out
+
+
+HE_CODES = ("he", "iw")   # Whisper/faster-whisper utilisent "he" ; "iw" est l'ancien code ISO
+
+
+def hebrew_probability(all_probs) -> float:
+    """Probabilité « hébreu » dans la sortie de detect_language (liste de (code, prob))."""
+    d = dict(all_probs or [])
+    return max((d.get(c, 0.0) for c in HE_CODES), default=0.0)
+
+
+def refine_segments(segments: list[Segment], audio, detect, retranscribe,
+                    sr: int = 16000, min_dur: float = 1.5, pad: float = 0.25,
+                    he_threshold: float = 0.5, base_lang: str = "fr") -> list[Segment]:
+    """Passe 2 du mode mixte (logique pure, testable sans modèle).
+
+    detect(chunk) -> probabilité d'hébreu ; retranscribe(chunk) -> texte hébreu.
+    Les segments trop courts (< min_dur) sont laissés tels quels : la détection de langue
+    n'est pas fiable sur 1 seconde de son.
+    """
+    out: list[Segment] = []
+    for seg in segments:
+        seg.lang = base_lang
+        if seg.end - seg.start >= min_dur:
+            a, b = max(int((seg.start - pad) * sr), 0), min(int((seg.end + pad) * sr), len(audio))
+            chunk = audio[a:b]
+            if detect(chunk) >= he_threshold:
+                text = retranscribe(chunk).strip()
+                if text:                      # on garde le texte d'origine si la passe hébreu échoue
+                    seg = Segment(seg.start, seg.end, text, seg.avg_logprob, "he")
+        out.append(seg)
+    return out
+
+
+def transcribe_mixed(engine: "ASREngine", wav_path: str | Path, he_engine: "ASREngine | None" = None,
+                     base_lang: str = "fr", initial_prompt: str | None = None,
+                     beam_size: int | None = None, he_threshold: float = 0.5,
+                     progress: Callable[[float], None] | None = None) -> list[Segment]:
+    """Français (ou base_lang) d'abord, puis re-transcription en hébreu des segments détectés « he »."""
+    from faster_whisper.audio import decode_audio
+
+    he_engine = he_engine or engine
+    segments = engine.transcribe(wav_path, base_lang, initial_prompt, beam_size,
+                                 progress=(lambda p: progress(p * 0.7)) if progress else None)
+    audio = decode_audio(str(wav_path), sampling_rate=16000)
+
+    def detect(chunk) -> float:
+        _, _, probs = engine.model.detect_language(audio=chunk, language_detection_segments=1)
+        return hebrew_probability(probs)
+
+    def retranscribe(chunk) -> str:
+        # Pas de prompt français ici : il tirerait le décodage vers le français.
+        segs, _ = he_engine.model.transcribe(chunk, language="he", beam_size=beam_size or 5,
+                                             condition_on_previous_text=False, vad_filter=False)
+        return " ".join(x.text.strip() for x in segs)
+
+    done = [0]
+
+    def detect_with_progress(chunk) -> float:
+        done[0] += 1
+        if progress and segments:
+            progress(0.7 + 0.3 * min(done[0] / len(segments), 1.0))
+        return detect(chunk)
+
+    return refine_segments(segments, audio, detect_with_progress, retranscribe,
+                           he_threshold=he_threshold, base_lang=base_lang)
 
 
 def segments_to_paragraphs(segments: Iterable[Segment], gap: float = 1.5, max_chars: int = 700) -> list[str]:

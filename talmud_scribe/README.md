@@ -17,7 +17,13 @@ pip install -r requirements.txt
 python main.py transcribe cours.mp3 --model small --context "Baba Kama 42a"
 python main.py transcribe cours.mp3 --model ivrit-turbo      # meilleur en hébreu, plus lent
 python main.py ocr notes.jpg
+python main.py transcribe cours.mp3 --mixed --model small --he-model ivrit-turbo   # français + hébreu
 ```
+
+**Mode `--mixed`** : passe 1 en français, puis détection de langue sur chaque segment (≥ 1,5 s) ;
+ceux détectés hébreux (`--he-threshold`, 0,5 par défaut) sont retranscrits en hébreu par `--he-model`.
+Deux modèles sont chargés (≈ 2 Go de RAM avec `small` + `ivrit-turbo`). Whisper n'a pas d'araméen :
+l'araméen est transcrit comme de l'hébreu, ce qui est en général lisible.
 
 Modèles : `tiny|base|small|medium|large-v3-turbo|ivrit-turbo|ivrit-large`. Sur i5/8 Go, itérez
 avec `small`, réservez `ivrit-turbo` (≈1,6 Go en int8) aux enregistrements importants.

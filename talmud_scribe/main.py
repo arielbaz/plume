@@ -28,7 +28,8 @@ def cmd_transcribe(a) -> int:
     patron_text = Path(a.patron_text).read_text(encoding="utf-8") if a.patron_text else None
     prompt = asr.build_prompt(vocal_text=patron_text, extra=a.context or "")
     cache = Cache(enabled=not a.no_cache)
-    key = make_key(src_path, model=a.model, lang=a.lang, prompt=prompt, beam=a.beam)
+    key = make_key(src_path, model=a.model, lang=a.lang, prompt=prompt, beam=a.beam,
+                   mixed=a.mixed, he_model=a.he_model if a.mixed else None, he_thr=a.he_threshold)
     cached = cache.get(key)
     if cached:
         print("Cache : transcription déjà faite, réutilisée.")
@@ -51,8 +52,16 @@ def cmd_transcribe(a) -> int:
                 print(f"\r  {pct:3d} %", end="", flush=True)
                 last[0] = pct
 
-        segments = engine.transcribe(wav, None if a.lang == "auto" else a.lang,
-                                     initial_prompt=prompt, beam_size=a.beam, progress=show)
+        if a.mixed:
+            he_engine = None if a.he_model == "same" else asr.ASREngine(a.he_model, cpu_threads=a.threads)
+            segments = asr.transcribe_mixed(engine, wav, he_engine, base_lang=a.lang if a.lang != "auto" else "fr",
+                                            initial_prompt=prompt, beam_size=a.beam,
+                                            he_threshold=a.he_threshold, progress=show)
+            n_he = sum(1 for s in segments if s.lang == "he")
+            print(f"\n  Mode mixte : {n_he}/{len(segments)} segments retranscrits en hébreu")
+        else:
+            segments = engine.transcribe(wav, None if a.lang == "auto" else a.lang,
+                                         initial_prompt=prompt, beam_size=a.beam, progress=show)
         print()
         cache.set(key, [s.to_dict() for s in segments])
 
@@ -116,6 +125,12 @@ def build_parser() -> argparse.ArgumentParser:
     t.add_argument("--beam", type=int, default=5)
     t.add_argument("--threads", type=int, default=0)
     t.add_argument("--no-cache", action="store_true")
+    t.add_argument("--mixed", action="store_true",
+                   help="détecte l'hébreu segment par segment et le retranscrit avec --he-model")
+    t.add_argument("--he-model", default="ivrit-turbo",
+                   help="modèle pour les passages hébreux en mode mixte ('same' = réutiliser --model)")
+    t.add_argument("--he-threshold", type=float, default=0.5,
+                   help="probabilité minimale d'hébreu pour retranscrire un segment (défaut 0.5)")
     t.add_argument("--patron-audio", help="(facultatif) enregistrement-patron pour mesurer le modèle")
     t.add_argument("--patron-text", help="(facultatif) texte exact du patron ; sert de prompt")
     t.set_defaults(func=cmd_transcribe)

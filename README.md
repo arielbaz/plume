@@ -42,12 +42,22 @@ un MP3 de téléphone, un enregistrement Zoom…) et rend un document prêt à �
   chargé depuis les réglages.
 - **100 % hors ligne** après le téléchargement du modèle.
 
+## Télécharger
+
+- **macOS (Apple Silicon)** : [Plume-0.2.0-arm64.dmg](https://github.com/arielbaz/plume/releases/download/v0.2.0/Plume-0.2.0-arm64.dmg)
+- **Windows** : [installateur .exe](https://github.com/arielbaz/plume/releases/download/v0.2.0/Plume_0.2.0_x64-setup.exe)
+  ou [paquet .msi](https://github.com/arielbaz/plume/releases/download/v0.2.0/Plume_0.2.0_x64_en-US.msi)
+- **Toutes les versions** : [github.com/arielbaz/plume/releases](https://github.com/arielbaz/plume/releases)
+- **Article de présentation** : [aribaz.com/articles/plume.html](https://aribaz.com/articles/plume.html)
+
+Le build Windows est produit par GitHub Actions (workflow `.github/workflows/build.yml`).
+Les binaires ne sont pas signés : macOS → clic droit **Ouvrir** ; Windows →
+SmartScreen → **Informations complémentaires** → **Exécuter quand même**.
+
 ## Démarrage rapide (macOS)
 
-Plume est installée dans `/Applications/Plume.app` (le paquet est aussi dans
-`src-tauri/target/release/bundle/macos/Plume.app` et dans le DMG
-`Plume-0.2.0-arm64.dmg`). Le modèle Large v3 Turbo est déjà présent sur cette
-machine.
+Plume est installée dans `/Applications/Plume.app`. Le modèle Large v3 Turbo est
+déjà présent sur cette machine.
 
 Ouvrez-la, laissez-la télécharger le modèle **Large v3 Turbo** (574 Mo, une seule
 fois), puis glissez un fichier audio dans la fenêtre. Le Word et le texte sont créés

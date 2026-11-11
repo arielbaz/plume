@@ -314,7 +314,23 @@ fn main() {
         println!("cargo:rustc-link-lib=static=ggml-base");
         println!("cargo:rustc-link-lib=static=ggml-cpu");
     }
-    if cfg!(target_os = "macos") || cfg!(feature = "openblas") {
+    // `cfg!(target_os)` dans un build script désigne l'hôte : sur un Mac qui
+    // cross-compile pour Android, il faut lire la cible réelle.
+    let target_os = env::var("CARGO_CFG_TARGET_OS").unwrap_or_default();
+    if target_os == "android" {
+        // Le toolchain CMake Android prend l'ABI dans ANDROID_ABI ; sans cela
+        // il compile par défaut en armeabi-v7a, incompatible avec arm64.
+        let abi = match env::var("CARGO_CFG_TARGET_ARCH").as_deref() {
+            Ok("aarch64") => "arm64-v8a",
+            Ok("arm") => "armeabi-v7a",
+            Ok("x86_64") => "x86_64",
+            Ok("x86") => "x86",
+            _ => "arm64-v8a",
+        };
+        config.define("ANDROID_ABI", abi);
+        config.define("ANDROID_PLATFORM", "android-24");
+    }
+    if target_os == "macos" || cfg!(feature = "openblas") {
         println!("cargo:rustc-link-lib=static=ggml-blas");
     }
     if cfg!(feature = "vulkan") {

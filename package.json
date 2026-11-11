@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tauri dev",
     "build": "tauri build",
-    "bundle": "tauri build --bundles app"
+    "bundle": "tauri build --bundles app",
+    "tauri": "tauri"
   },
   "keywords": [
     "whisper",

@@ -47,6 +47,7 @@ un MP3 de téléphone, un enregistrement Zoom…) et rend un document prêt à �
 - **macOS (Apple Silicon)** : [Plume-0.3.0-arm64.dmg](https://github.com/arielbaz/plume/releases/download/v0.3.0/Plume-0.3.0-arm64.dmg)
 - **Windows** : [installateur .exe](https://github.com/arielbaz/plume/releases/download/v0.3.0/Plume_0.3.0_x64-setup.exe)
   ou [paquet .msi](https://github.com/arielbaz/plume/releases/download/v0.3.0/Plume_0.3.0_x64_en-US.msi)
+- **Android** : [APK arm64](https://github.com/arielbaz/plume/releases/download/v0.3.0/Plume-0.3.0-android-arm64.apk)
 - **Toutes les versions** : [github.com/arielbaz/plume/releases](https://github.com/arielbaz/plume/releases)
 - **Article de présentation** : [aribaz.com/articles/plume.html](https://aribaz.com/articles/plume.html)
 
@@ -149,6 +150,20 @@ Les modèles sont téléchargés à la demande depuis le dépôt officiel
 réglages ; les fichiers vivent dans
 `~/Library/Application Support/com.plume.desktop/models` (macOS) ou
 `%APPDATA%\com.plume.desktop\models` (Windows).
+
+## Android
+
+Un APK arm64 est fourni dans la release (Android 7.0 / API 24 minimum). Pour le
+construire soi-même, avec le SDK Android, le NDK 27, le JDK 17, CMake et Ninja :
+
+```bash
+./scripts/build-android.sh
+```
+
+La signature de release utilise un keystore fourni par l'utilisateur
+(`PLUME_ANDROID_KEYSTORE`, `PLUME_ANDROID_STOREPASS`). Sans keystore, l'APK produit
+n'est pas signé. Le modèle Whisper se télécharge dans l'application, comme sur
+ordinateur ; compter 574 Mo pour Large v3 Turbo.
 
 ## Compiler soi-même
 

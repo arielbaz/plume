@@ -86,7 +86,18 @@ pub fn all() -> Vec<&'static ModelSpec> {
     list
 }
 
+static DATA_ROOT: std::sync::OnceLock<PathBuf> = std::sync::OnceLock::new();
+
+/// Sur Android (et pour les chemins fournis par Tauri), le dossier de données
+/// est injecté au démarrage. Sinon on retombe sur les chemins système.
+pub fn set_data_root(path: PathBuf) {
+    let _ = DATA_ROOT.set(path);
+}
+
 pub fn data_root() -> PathBuf {
+    if let Some(dir) = DATA_ROOT.get() {
+        return dir.clone();
+    }
     if let Some(dir) = std::env::var_os("PLUME_DATA_DIR") {
         return PathBuf::from(dir);
     }
@@ -110,7 +121,7 @@ pub fn is_installed(spec: &ModelSpec) -> bool {
 pub fn default_output_dir() -> PathBuf {
     dirs::document_dir()
         .or_else(dirs::home_dir)
-        .unwrap_or_else(|| PathBuf::from("."))
+        .unwrap_or_else(|| data_root())
         .join("Plume")
 }
 

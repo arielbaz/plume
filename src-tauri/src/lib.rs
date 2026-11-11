@@ -16,7 +16,7 @@ use std::path::{Path, PathBuf};
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::mpsc::Sender;
 use std::sync::{Arc, Mutex};
-use tauri::{AppHandle, State};
+use tauri::{AppHandle, Manager, State};
 use tauri_plugin_dialog::DialogExt;
 
 pub struct AppState {
@@ -324,19 +324,27 @@ async fn pick_files(app: AppHandle) -> Vec<String> {
 
 #[tauri::command]
 async fn pick_output_dir(app: AppHandle) -> Option<String> {
-    let (tx, rx) = tokio::sync::oneshot::channel();
-    app.dialog()
-        .file()
-        .set_title("Choisir le dossier d'enregistrement")
-        .pick_folder(move |picked| {
-            let _ = tx.send(picked);
-        });
-    match rx.await {
-        Ok(Some(folder)) => folder
-            .into_path()
-            .ok()
-            .map(|p| p.to_string_lossy().to_string()),
-        _ => None,
+    #[cfg(desktop)]
+    {
+        let (tx, rx) = tokio::sync::oneshot::channel();
+        app.dialog()
+            .file()
+            .set_title("Choisir le dossier d'enregistrement")
+            .pick_folder(move |picked| {
+                let _ = tx.send(picked);
+            });
+        match rx.await {
+            Ok(Some(folder)) => folder
+                .into_path()
+                .ok()
+                .map(|p| p.to_string_lossy().to_string()),
+            _ => None,
+        }
+    }
+    #[cfg(mobile)]
+    {
+        let _ = app;
+        None
     }
 }
 
@@ -388,8 +396,8 @@ fn delete_model(id: String, state: State<'_, AppState>) -> Result<(), String> {
     models::remove(&id)
 }
 
+#[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
-    let cfg = settings::load();
     let jobs: jobs::Jobs = Arc::new(Mutex::new(Vec::new()));
     let downloads: Downloads = Arc::new(Mutex::new(HashMap::new()));
     let (tx, rx) = jobs::sender_channel();
@@ -402,9 +410,16 @@ pub fn run() {
             jobs,
             tx: Mutex::new(tx),
             downloads,
-            settings: Mutex::new(cfg),
+            settings: Mutex::new(settings::Settings::default()),
         })
-        .setup(move |_app| {
+        .setup(move |app| {
+            // Tauri résout le dossier de données correct sur Android, iOS,
+            // Windows et macOS (y compris les espaces du chemin).
+            if let Ok(dir) = app.path().app_data_dir() {
+                models::set_data_root(dir);
+            }
+            let cfg = settings::load();
+            *app.state::<AppState>().settings.lock().unwrap() = cfg;
             audio::cleanup_playback(7);
             jobs::spawn_worker(worker_jobs, rx);
             Ok(())

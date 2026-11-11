@@ -25,7 +25,8 @@ def cmd_transcribe(a) -> int:
         print(f"Fichier introuvable : {src}", file=sys.stderr)
         return 2
 
-    prompt = asr.build_prompt(extra=a.context or "")
+    patron_text = Path(a.patron_text).read_text(encoding="utf-8") if a.patron_text else None
+    prompt = asr.build_prompt(vocal_text=patron_text, extra=a.context or "")
     cache = Cache(enabled=not a.no_cache)
     key = make_key(src_path, model=a.model, lang=a.lang, prompt=prompt, beam=a.beam)
     cached = cache.get(key)
@@ -35,6 +36,13 @@ def cmd_transcribe(a) -> int:
     else:
         wav = pre.to_wav16k(src_path)
         engine = asr.ASREngine(a.model, cpu_threads=a.threads)
+        if a.patron_audio:
+            if not patron_text:
+                print("--patron-audio demande aussi --patron-text (le texte exact lu).", file=sys.stderr)
+                return 2
+            score = asr.check_patron(engine, a.patron_audio, patron_text,
+                                     None if a.lang == "auto" else a.lang)
+            print(f"Patron vocal : WER {score:.1%} avec le modèle {a.model}")
         last = [-1]
 
         def show(p: float) -> None:
@@ -61,7 +69,13 @@ def cmd_ocr(a) -> int:
     from core.docx_builder import build_document
 
     img = Path(a.input)
-    text = ocr.ocr_file(img)
+    params = None
+    if a.patron_image:
+        truth = a.patron_text or ocr.CALIB / "manuscrit_text.txt"
+        print("Calibration sur votre patron manuscrit (ce lancement seulement)…")
+        params = ocr.calibrate(a.patron_image, truth, verbose=False, save=False)
+        print(f"  meilleur réglage : CER {params['cer']:.1%}")
+    text = ocr.ocr_file(img, params)
     paragraphs = [p for p in text.split("\n\n") if p.strip()] or [text]
     out = Path(a.output) if a.output else img.with_suffix(".docx")
     build_document(a.title or img.stem, paragraphs, out, meta={"Source": img.name, "Type": "Manuscrit (OCR)"})
@@ -102,12 +116,16 @@ def build_parser() -> argparse.ArgumentParser:
     t.add_argument("--beam", type=int, default=5)
     t.add_argument("--threads", type=int, default=0)
     t.add_argument("--no-cache", action="store_true")
+    t.add_argument("--patron-audio", help="(facultatif) enregistrement-patron pour mesurer le modèle")
+    t.add_argument("--patron-text", help="(facultatif) texte exact du patron ; sert de prompt")
     t.set_defaults(func=cmd_transcribe)
 
     o = sub.add_parser("ocr", help="image manuscrite -> .docx")
     o.add_argument("input")
     o.add_argument("-o", "--output")
     o.add_argument("--title")
+    o.add_argument("--patron-image", help="(facultatif) feuille manuscrite-patron pour calibrer ce lancement")
+    o.add_argument("--patron-text", help="(facultatif) texte exact de la feuille (défaut : calibration/manuscrit_text.txt)")
     o.set_defaults(func=cmd_ocr)
 
     ca = sub.add_parser("calibrate-asr", help="compare les modèles sur le patron vocal")

@@ -57,7 +57,7 @@ def ocr_file(path: str | Path, params: dict | None = None, lang: str = "heb+fra"
 
 
 def calibrate(patron_png: str | Path | None = None, truth_txt: str | Path | None = None,
-              lang: str = "heb+fra", verbose: bool = True) -> dict:
+              lang: str = "heb+fra", verbose: bool = True, save: bool = True) -> dict:
     """Grid-search des paramètres sur la feuille patron ; sauvegarde le meilleur dans profile.json."""
     patron_png = Path(patron_png or CALIB / "manuscrit_patron.png")
     truth_txt = Path(truth_txt or CALIB / "manuscrit_text.txt")
@@ -82,10 +82,13 @@ def calibrate(patron_png: str | Path | None = None, truth_txt: str | Path | None
         if score < best_cer:
             best, best_cer = params, score
 
+    result = {**best, "cer": round(best_cer, 4)}
+    if not save:           # calibration ponctuelle : valable pour ce lancement seulement
+        return result
     try:
         profile = json.loads(PROFILE.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         profile = {}
-    profile["ocr"] = {**best, "cer": round(best_cer, 4)}
+    profile["ocr"] = result
     PROFILE.write_text(json.dumps(profile, ensure_ascii=False, indent=2), encoding="utf-8")
-    return profile["ocr"]
+    return result

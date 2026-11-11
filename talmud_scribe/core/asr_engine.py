@@ -152,3 +152,13 @@ def calibrate(wav_path: str | Path | None = None, truth_txt: str | Path | None =
     profile["asr"] = {**profile.get("asr", {}), "model": best["model"], "wer": best["wer"]}
     PROFILE.write_text(json.dumps(profile, ensure_ascii=False, indent=2), encoding="utf-8")
     return profile["asr"]
+
+
+def check_patron(engine: "ASREngine", patron_wav: str | Path, truth_text: str,
+                 language: str | None = "fr") -> float:
+    """WER de ce modèle sur un patron vocal fourni pour CE lancement (aucune sauvegarde).
+    Mesuré sans prompt de patron, pour ne pas fausser le score."""
+    from utils.preprocessor import to_wav16k
+    from utils.metrics import wer
+    segs = engine.transcribe(to_wav16k(patron_wav), language, initial_prompt=BASE_HOTWORDS)
+    return wer(truth_text, " ".join(s.text for s in segs))

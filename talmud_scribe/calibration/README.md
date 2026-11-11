@@ -1,6 +1,6 @@
 # Patrons de calibration
 
-Deux fichiers **à fournir par vous** (ils dépendent de votre voix et de votre écriture) :
+Deux fichiers **facultatifs**, à fournir par vous (de préférence via `--patron-audio/--patron-image` à chaque lancement ; les déposer ici ne sert qu'aux commandes `calibrate-*`) (ils dépendent de votre voix et de votre écriture) :
 
 | Fichier | Contenu | Comment le produire |
 |---|---|---|

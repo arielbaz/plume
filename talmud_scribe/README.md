@@ -23,11 +23,20 @@ Modèles : `tiny|base|small|medium|large-v3-turbo|ivrit-turbo|ivrit-large`. Sur 
 avec `small`, réservez `ivrit-turbo` (≈1,6 Go en int8) aux enregistrements importants.
 Les résultats sont mis en cache (`~/.cache/talmud_scribe`) : relancer ne retraite rien.
 
-## Calibration par patrons
+## Calibration par patrons (facultative, à chaque lancement)
 
-1. Lisez `calibration/vocal_text.txt` (~1 min) → `calibration/vocal_patron.wav`.
-2. `python main.py make-template`, imprimez `feuille_guide.png`, recopiez à la main, scannez → `calibration/manuscrit_patron.png`.
-3. `python main.py calibrate-asr` compare `small` et `ivrit-turbo` (WER) ; `python main.py calibrate-ocr` cherche le meilleur prétraitement (CER). Résultat dans `calibration/profile.json`.
+Aucun patron n'est requis : sans option, l'outil utilise le vocabulaire par défaut.
+Si vous voulez calibrer, vous fournissez vos patrons au moment du lancement :
+
+```bash
+python main.py transcribe cours.mp3 --patron-audio mon_patron.wav --patron-text mon_patron.txt
+python main.py ocr notes.jpg --patron-image ma_feuille.png [--patron-text ma_feuille.txt]
+```
+
+- `--patron-text` sert de prompt à Whisper ; avec `--patron-audio`, le WER du modèle sur votre voix est affiché.
+- `--patron-image` règle le prétraitement OCR pour votre écriture, pour ce lancement seulement.
+- `python main.py make-template` génère une feuille guide à recopier à la main.
+- `calibrate-asr` / `calibrate-ocr` (avec fichiers dans `calibration/`) restent disponibles pour une calibration mémorisée dans `profile.json`.
 
 Limites assumées :
 - Le patron vocal sert aussi de prompt ; on ne mesure donc qu'avec la liste de termes pour ne pas gonfler le score.

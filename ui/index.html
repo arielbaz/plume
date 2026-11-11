@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plume — transcription locale</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar" data-tauri-drag-region>
+      <div class="brand" data-tauri-drag-region>
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="34" height="34">
+            <rect width="32" height="32" rx="9" fill="url(#g)" />
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#CE7247" />
+                <stop offset="1" stop-color="#98421F" />
+              </linearGradient>
+            </defs>
+            <g fill="#FBF3E6">
+              <rect x="8.2" y="13.2" width="2.4" height="5.6" rx="1.2" />
+              <rect x="12.2" y="10.4" width="2.4" height="11.2" rx="1.2" />
+              <rect x="16.2" y="7.6" width="2.4" height="16.8" rx="1.2" />
+              <rect x="20.2" y="11.2" width="2.4" height="9.6" rx="1.2" />
+            </g>
+            <rect x="11" y="25" width="10" height="1.6" rx="0.8" fill="#FBF3E6" opacity="0.55" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="name">Plume</span>
+          <span class="tag">transcription locale</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button id="modelChip" class="chip" type="button" title="Modèle de transcription">
+          <span class="dot" id="modelDot"></span>
+          <span id="modelChipText">Modèle</span>
+        </button>
+        <button id="settingsBtn" class="ghost-btn" type="button" aria-label="Réglages">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+            <circle cx="12" cy="12" r="3.2" />
+            <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.9 19.3a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.7 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.7 8.9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.7h.08A1.7 1.7 0 0 0 10.1 3.14V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1.03 1.56 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87v.08a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1.03Z" />
+          </svg>
+          Réglages
+        </button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="left">
+        <button id="topicPill" class="topic-pill" type="button">
+          <span class="topic-glyph" aria-hidden="true">ת</span>
+          <span class="topic-text">
+            <span class="topic-kicker">Sujet du cours</span>
+            <strong id="topicName">Détection automatique</strong>
+          </span>
+          <span id="topicTermsBadge" class="topic-terms"></span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+        </button>
+
+        <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Importer des fichiers audio">
+          <div class="drop-art" aria-hidden="true">
+            <div class="rings"></div>
+            <svg viewBox="0 0 48 48" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+              <path d="M24 31V13m0 0-7 7m7-7 7 7" />
+              <path d="M11 31v3a3 3 0 0 0 3 3h20a3 3 0 0 0 3-3v-3" />
+            </svg>
+          </div>
+          <h1>Vos cours, en texte.</h1>
+          <p class="drop-sub">
+            Glissez un fichier audio ou vidéo : Plume le transcrit ici, sans envoyer
+            un octet sur Internet.
+          </p>
+          <button id="chooseBtn" class="primary" type="button">
+            Choisir des fichiers
+          </button>
+          <div class="formats">MP3 · M4A · AAC · WAV · FLAC · OGG · MP4</div>
+          <div class="drop-hint">ou déposez simplement le fichier sur cette fenêtre</div>
+        </div>
+
+        <div id="modelBanner" class="banner" hidden>
+          <div class="banner-text">
+            <strong id="bannerTitle">Modèle à télécharger</strong>
+            <span id="bannerText">Téléchargez le modèle pour lancer votre première transcription.</span>
+          </div>
+          <button id="bannerBtn" class="primary small" type="button">Télécharger</button>
+        </div>
+
+        <div class="queue-head">
+          <h2>File d'attente</h2>
+          <span id="queueCount" class="count">0</span>
+        </div>
+        <div id="queue" class="queue">
+          <div class="queue-empty" id="queueEmpty">
+            Aucun fichier pour l'instant. Vos transcriptions s'afficheront au fil de l'eau.
+          </div>
+        </div>
+
+        <div class="privacy">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.9">
+            <rect x="4" y="10" width="16" height="10" rx="2.2" />
+            <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+          </svg>
+          <span>Vos fichiers restent sur cet ordinateur.</span>
+        </div>
+      </section>
+
+      <section id="preview" class="preview" aria-live="polite"></section>
+    </main>
+
+
+    <div id="topicModal" class="modal-backdrop" hidden>
+      <div class="modal topic-modal" role="dialog" aria-modal="true" aria-labelledby="topicTitle">
+        <header class="modal-head">
+          <div>
+            <div class="eyebrow">Préparer le cours</div>
+            <h2 id="topicTitle">Sujet et vocabulaire</h2>
+          </div>
+          <button id="closeTopic" class="icon-btn" type="button" aria-label="Fermer">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </header>
+        <div class="modal-body">
+          <p class="hint-line">Le sujet est détecté depuis le nom du fichier quand c'est possible. Choisissez le traité, la parachа ou le thème de halakha : Plume prépare les termes probables pour cette page.</p>
+          <div class="topic-tabs" id="topicTabs">
+            <button data-kind="tractate" class="active" type="button">Talmud</button>
+            <button data-kind="parsha" type="button">Torah</button>
+            <button data-kind="halakha" type="button">Halakha</button>
+            <button data-kind="lexeme" type="button">Dictionnaire</button>
+          </div>
+          <div class="topic-tools">
+            <input id="topicSearch" type="search" placeholder="Rechercher un traité, une paracha, un thème…" autocomplete="off" />
+            <div id="topicList" class="topic-grid"></div>
+          </div>
+
+          <div class="topic-selected">
+            <div class="topic-selected-head">
+              <div>
+                <div class="eyebrow">Sujet retenu</div>
+                <strong id="topicSelectedName">Aucun — détection au moment de l'import</strong>
+              </div>
+              <div class="daf-field">
+                <label for="topicDaf">Daf / page</label>
+                <input id="topicDaf" type="text" placeholder="42a" autocomplete="off" />
+              </div>
+            </div>
+            <div class="chips" id="topicTermChips"></div>
+            <div class="topic-actions">
+              <button id="topicAddAll" class="soft-btn" type="button">Tout garder</button>
+              <button id="topicClearTerms" class="soft-btn" type="button">Tout retirer</button>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>Contexte du cours <em>— facultatif</em></span>
+            <textarea id="topicContext" rows="3" placeholder="Ex. : cours de Rav X, niveau avancé, iyun sur le traité Baba Kama, page 42a. Explications en français, citations en hébreu."></textarea>
+          </label>
+
+          <div class="field">
+            <span>Termes techniques <em>— facultatifs</em></span>
+            <div class="tech-input-row">
+              <input id="techInput" list="techDatalist" placeholder="Ajouter un terme (ex. סברא, חזקה…)" autocomplete="off" />
+              <datalist id="techDatalist"></datalist>
+              <button id="techAdd" class="soft-btn" type="button">Ajouter</button>
+            </div>
+            <div class="chips" id="techChips"></div>
+            <p class="field-note">Ces termes orientent Whisper et servent de suggestions pour les mots incertains.</p>
+          </div>
+        </div>
+        <footer class="modal-foot">
+          <button id="topicReset" class="soft-btn" type="button">Réinitialiser</button>
+          <button id="topicApply" class="primary" type="button">Appliquer au prochain import</button>
+        </footer>
+      </div>
+    </div>
+
+    <div id="uncertainPop" class="popover" hidden>
+      <div class="pop-kicker">Mot peu sûr</div>
+      <div class="pop-word" id="uncertainWord"></div>
+      <button id="uncertainApply" class="pop-apply" type="button"></button>
+      <div class="pop-hint" id="uncertainHint">La correction sera apprise pour les prochaines transcriptions.</div>
+    </div>
+
+    <audio id="audioEl" preload="metadata"></audio>
+
+    <div id="settingsModal" class="modal-backdrop" hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+        <header class="modal-head">
+          <div>
+            <div class="eyebrow">Préférences</div>
+            <h2 id="settingsTitle">Réglages</h2>
+          </div>
+          <button id="closeSettings" class="icon-btn" type="button" aria-label="Fermer">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M6 6l12 12M18 6 6 18" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="modal-body">
+          <section class="setting-block">
+            <div class="block-head">
+              <h3>Moteur de transcription</h3>
+              <p>Whisper tourne en local. Pour l'hébreu et l'araméen, le grand modèle est nettement plus fiable.</p>
+            </div>
+            <div id="modelList" class="models"></div>
+            <p class="field-note" style="margin:-4px 0 12px">Un modèle affiné (Whisper converti en GGML) peut être importé ici : il apparaîtra comme « Modèle affiné » et remplacera le modèle généraliste pour vos cours.</p>
+            <p class="hint-line">Cours en français avec des citations hébraïques : choisissez « Français ». Cours en hébreu avec des explications en français : choisissez « Hébreu » — Whisper suit la langue principale et conserve les termes de l'autre langue.</p>
+            <div class="field-grid">
+              <label class="field">
+                <span>Langue principale</span>
+                <select id="language">
+                  <option value="he">Hébreu / araméen</option>
+                  <option value="fr">Français</option>
+                  <option value="auto">Détection automatique</option>
+                  <option value="en">Anglais</option>
+                  <option value="yi">Yiddish</option>
+                  <option value="ar">Arabe</option>
+                  <option value="es">Espagnol</option>
+                  <option value="de">Allemand</option>
+                  <option value="it">Italien</option>
+                  <option value="pt">Portugais</option>
+                  <option value="ru">Russe</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Contexte du cours</span>
+                <select id="preset">
+                  <option value="gemara">Gemara / Talmud (iyoun)</option>
+                  <option value="torah">Cours de Torah / parcha</option>
+                  <option value="daf">Daf Yomi</option>
+                  <option value="none">Aucun contexte particulier</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <section class="setting-block">
+            <div class="block-head">
+              <h3>Précision pour l'étude</h3>
+              <p>
+                Le glossaire oriente Whisper vers vos termes (noms de Rabbanim,
+                traités, expressions). Les corrections sont appliquées après coup,
+                sur le texte exporté.
+              </p>
+            </div>
+            <label class="field">
+              <span>Glossaire <em>— un terme par ligne</em></span>
+              <textarea id="glossary" rows="4" spellcheck="false" placeholder="בבא קמא&#10;רבי חיים מבריסק&#10;חזון איש&#10;סוגיית בור ברשות הרבים"></textarea>
+            </label>
+            <label class="field">
+              <span>Corrections <em>— « mal transcrit = correction »</em></span>
+              <textarea id="corrections" rows="3" spellcheck="false" placeholder="רמבם = רמב״ם&#10;רשי = רש״י&#10;תוספות = תוס׳"></textarea>
+            </label>
+            <label class="field">
+              <span>Contexte par défaut <em>— facultatif</em></span>
+              <textarea id="customPrompt" rows="2" placeholder="Ex. : shiur de Rav X sur le traité Shabbat, niveau avancé."></textarea>
+            </label>
+            <label class="switch">
+              <input id="normalizeQuotes" type="checkbox" />
+              <span class="track"></span>
+              <span>Normaliser les guillemets hébraïques (רש״י, רמב״ם)</span>
+            </label>
+          </section>
+
+          <section class="setting-block">
+            <div class="block-head">
+              <h3>Apprentissage</h3>
+              <p>Quand vous acceptez une suggestion sur un mot incertain, Plume retient la correction et l'applique aux prochaines transcriptions. Les termes corrigés enrichissent aussi le vocabulaire du sujet.</p>
+            </div>
+            <div id="learningSummary" class="learning-summary">Aucune correction apprise pour l'instant.</div>
+            <button id="learningReset" class="soft-btn" type="button">Réinitialiser l'apprentissage</button>
+          </section>
+
+          <section class="setting-block">
+            <div class="block-head">
+              <h3>Sortie</h3>
+              <p>Word et texte sont créés automatiquement à la fin de chaque transcription.</p>
+            </div>
+            <div class="path-row">
+              <code id="outDir">—</code>
+              <button id="pickOut" class="soft-btn" type="button">Changer</button>
+              <button id="openOut" class="soft-btn" type="button">Ouvrir</button>
+            </div>
+            <label class="switch">
+              <input id="timestamps" type="checkbox" />
+              <span class="track"></span>
+              <span>Ajouter les horodatages dans le texte et le document</span>
+            </label>
+          </section>
+        </div>
+
+        <footer class="modal-foot">
+          <span id="saveState" class="save-state"></span>
+          <button id="saveSettings" class="primary" type="button">Enregistrer</button>
+        </footer>
+      </div>
+    </div>
+
+    <div id="toast" class="toast" hidden></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

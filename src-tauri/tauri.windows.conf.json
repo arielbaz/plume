@@ -1,0 +1,17 @@
+{
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Plume — transcription locale",
+        "width": 1200,
+        "height": 820,
+        "minWidth": 980,
+        "minHeight": 680,
+        "center": true,
+        "decorations": true,
+        "backgroundColor": "#F6F1E8"
+      }
+    ]
+  }
+}

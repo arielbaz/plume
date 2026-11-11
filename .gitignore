@@ -1,0 +1,8 @@
+node_modules/
+.npm-cache/
+.tools/
+.devdata/
+src-tauri/target/
+src-tauri/gen/
+*.dmg
+.DS_Store

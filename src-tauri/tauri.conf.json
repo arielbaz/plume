@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Plume",
+  "version": "0.2.0",
+  "identifier": "com.plume.desktop",
+  "build": {
+    "frontendDist": "../ui"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Plume — transcription locale",
+        "width": 1200,
+        "height": 820,
+        "minWidth": 960,
+        "minHeight": 660,
+        "center": true,
+        "titleBarStyle": "Overlay",
+        "hiddenTitle": true,
+        "backgroundColor": "#F6F1E8"
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "$APPDATA/**"
+        ]
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Productivity",
+    "shortDescription": "Transcrivez vos fichiers audio en texte et en Word, hors ligne.",
+    "longDescription": "Plume transforme vos fichiers audio et vidéo (MP3, M4A, WAV, FLAC, OGG, MP4…) en texte propre et en document Word mis en page. Tout est transcrit localement avec Whisper, sans envoyer vos fichiers sur Internet.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "11.0"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "plume",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Transcription locale de fichiers audio en texte et Word, pensée pour l'étude (hébreu, araméen, français).",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "bundle": "tauri build --bundles app"
+  },
+  "keywords": [
+    "whisper",
+    "transcription",
+    "hebrew",
+    "talmud",
+    "tauri"
+  ],
+  "author": "Plume",
+  "license": "MIT",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4"
+  }
+}

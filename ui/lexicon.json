@@ -1,0 +1,3537 @@
+{
+ "version": 1,
+ "note": "Lexique de travail pour la transcription d'un cours de Talmud / halakha. Les termes liés servent de champs lexicaux.",
+ "categories": [
+  "Traités du Talmud",
+  "Sedarim",
+  "Concepts talmudiques",
+  "Araméen du Talmud",
+  "Halakha",
+  "Rishonim & Acharonim",
+  "Tannaïm & Amoraïm",
+  "Mesures",
+  "Parachiot"
+ ],
+ "entries": [
+  {
+   "id": "arakhin",
+   "he": "ערכין",
+   "fr": "Arakhin",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "ערך",
+    "הקדש"
+   ],
+   "aliases": [
+    "arakhin",
+    "archin"
+   ],
+   "core": true
+  },
+  {
+   "id": "avodah-zarah",
+   "he": "עבודה זרה",
+   "fr": "Avodah Zarah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "עבודה זרה",
+    "גויים",
+    "יין נסך"
+   ],
+   "aliases": [
+    "avodah zarah",
+    "avoda zara",
+    "עבודה זרה"
+   ],
+   "core": true
+  },
+  {
+   "id": "baba-batra",
+   "he": "בבא בתרא",
+   "fr": "Baba Batra",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "חזקה",
+    "שכנים",
+    "ירושה",
+    "מכירה",
+    "קניין",
+    "גביה"
+   ],
+   "aliases": [
+    "baba batra",
+    "bava batra",
+    "bava basra",
+    "בבא בתרא",
+    "בב״ב"
+   ],
+   "core": true
+  },
+  {
+   "id": "baba-kama",
+   "he": "בבא קמא",
+   "fr": "Baba Kama",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "שור",
+    "בור",
+    "הבער",
+    "אדם",
+    "מזיק",
+    "נזיקין",
+    "תשלומין"
+   ],
+   "aliases": [
+    "baba kama",
+    "bava kama",
+    "bava kamma",
+    "baba kamma",
+    "בבא קמא",
+    "בב״ק"
+   ],
+   "core": true
+  },
+  {
+   "id": "baba-metzia",
+   "he": "בבא מציעא",
+   "fr": "Baba Metzia",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "מציאה",
+    "אבידה",
+    "שומרים",
+    "הלוואה",
+    "ריבית",
+    "קניין"
+   ],
+   "aliases": [
+    "baba metzia",
+    "bava metzia",
+    "bava metziah",
+    "בבא מציעא",
+    "בב״מ"
+   ],
+   "core": true
+  },
+  {
+   "id": "beitzah",
+   "he": "ביצה",
+   "fr": "Beitzah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "beitzah",
+    "beitsa",
+    "betza"
+   ],
+   "core": true
+  },
+  {
+   "id": "bekhorot",
+   "he": "בכורות",
+   "fr": "Bekhorot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "בכור",
+    "פדיון",
+    "מעשר"
+   ],
+   "aliases": [
+    "bekhorot",
+    "bechorot"
+   ],
+   "core": true
+  },
+  {
+   "id": "berakhot",
+   "he": "ברכות",
+   "fr": "Berakhot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "berakhot",
+    "berachot",
+    "brachot",
+    "ברכות"
+   ],
+   "core": true
+  },
+  {
+   "id": "bikkurim",
+   "he": "ביכורים",
+   "fr": "Bikkurim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "bikkurim"
+   ],
+   "core": true
+  },
+  {
+   "id": "chagigah",
+   "he": "חגיגה",
+   "fr": "Chagigah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "chagigah",
+    "hagiga"
+   ],
+   "core": true
+  },
+  {
+   "id": "challah",
+   "he": "חלה",
+   "fr": "Challah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "challah",
+    "halla"
+   ],
+   "core": true
+  },
+  {
+   "id": "chullin",
+   "he": "חולין",
+   "fr": "Chullin",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "שחיטה",
+    "כשרות",
+    "טרפה"
+   ],
+   "aliases": [
+    "chullin",
+    "hullin"
+   ],
+   "core": true
+  },
+  {
+   "id": "demai",
+   "he": "דמאי",
+   "fr": "Demai",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "demai"
+   ],
+   "core": true
+  },
+  {
+   "id": "eduyot",
+   "he": "עדויות",
+   "fr": "Eduyot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "eduyot",
+    "eduyos"
+   ],
+   "core": true
+  },
+  {
+   "id": "eruvin",
+   "he": "עירובין",
+   "fr": "Eruvin",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "eruvin",
+    "eruvim"
+   ],
+   "core": true
+  },
+  {
+   "id": "gittin",
+   "he": "גיטין",
+   "fr": "Gittin",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "gittin",
+    "gitin"
+   ],
+   "core": true
+  },
+  {
+   "id": "horayot",
+   "he": "הוריות",
+   "fr": "Horayot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "horayot",
+    "horayos"
+   ],
+   "core": true
+  },
+  {
+   "id": "kelim",
+   "he": "כלים",
+   "fr": "Kelim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "טומאה",
+    "כלים"
+   ],
+   "aliases": [
+    "kelim",
+    "keilim"
+   ],
+   "core": true
+  },
+  {
+   "id": "keritot",
+   "he": "כריתות",
+   "fr": "Keritot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "כרת",
+    "חטאת"
+   ],
+   "aliases": [
+    "keritot",
+    "keritos"
+   ],
+   "core": true
+  },
+  {
+   "id": "ketubot",
+   "he": "כתובות",
+   "fr": "Ketubot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "ketubot",
+    "kesubos",
+    "ketubos"
+   ],
+   "core": true
+  },
+  {
+   "id": "kiddushin",
+   "he": "קידושין",
+   "fr": "Kiddushin",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "kiddushin",
+    "kidushin"
+   ],
+   "core": true
+  },
+  {
+   "id": "kilayim",
+   "he": "כלאים",
+   "fr": "Kilayim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "kilayim"
+   ],
+   "core": true
+  },
+  {
+   "id": "kinnim",
+   "he": "קינים",
+   "fr": "Kinnim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "קרבן עוף"
+   ],
+   "aliases": [
+    "kinnim",
+    "kinim"
+   ],
+   "core": true
+  },
+  {
+   "id": "maaser-sheni",
+   "he": "מעשר שני",
+   "fr": "Maaser Sheni",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "maaser sheni",
+    "ma'aser sheni"
+   ],
+   "core": true
+  },
+  {
+   "id": "maasrot",
+   "he": "מעשרות",
+   "fr": "Maasrot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "maasrot",
+    "maasrot"
+   ],
+   "core": true
+  },
+  {
+   "id": "makhshirin",
+   "he": "מכשירין",
+   "fr": "Makhshirin",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "makhshirin",
+    "machshirin"
+   ],
+   "core": true
+  },
+  {
+   "id": "makkot",
+   "he": "מכות",
+   "fr": "Makkot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "מלקות",
+    "עדים זוממים",
+    "גלות"
+   ],
+   "aliases": [
+    "makkot",
+    "makkos",
+    "makot"
+   ],
+   "core": true
+  },
+  {
+   "id": "megillah",
+   "he": "מגילה",
+   "fr": "Megillah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "megillah",
+    "megila"
+   ],
+   "core": true
+  },
+  {
+   "id": "meilah",
+   "he": "מעילה",
+   "fr": "Meilah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "מעילה",
+    "הקדש"
+   ],
+   "aliases": [
+    "meilah",
+    "meila"
+   ],
+   "core": true
+  },
+  {
+   "id": "menachot",
+   "he": "מנחות",
+   "fr": "Menachot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "מנחה",
+    "קרבן",
+    "סולת"
+   ],
+   "aliases": [
+    "menachot",
+    "menachos"
+   ],
+   "core": true
+  },
+  {
+   "id": "middot",
+   "he": "מידות",
+   "fr": "Middot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "בית המקדש"
+   ],
+   "aliases": [
+    "middot",
+    "midot"
+   ],
+   "core": true
+  },
+  {
+   "id": "mikvaot",
+   "he": "מקוואות",
+   "fr": "Mikvaot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "מקווה",
+    "טומאה",
+    "טהרה"
+   ],
+   "aliases": [
+    "mikvaot",
+    "mikva'ot"
+   ],
+   "core": true
+  },
+  {
+   "id": "moed-katan",
+   "he": "מועד קטן",
+   "fr": "Moed Katan",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "moed katan",
+    "moed koton"
+   ],
+   "core": true
+  },
+  {
+   "id": "nazir",
+   "he": "נזיר",
+   "fr": "Nazir",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "nazir"
+   ],
+   "core": true
+  },
+  {
+   "id": "nedarim",
+   "he": "נדרים",
+   "fr": "Nedarim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "nedarim"
+   ],
+   "core": true
+  },
+  {
+   "id": "negaim",
+   "he": "נגעים",
+   "fr": "Negaim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "צרעת",
+    "כהן"
+   ],
+   "aliases": [
+    "negaim",
+    "negohim"
+   ],
+   "core": true
+  },
+  {
+   "id": "niddah",
+   "he": "נידה",
+   "fr": "Niddah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "נידה",
+    "טהרה",
+    "מקווה"
+   ],
+   "aliases": [
+    "niddah",
+    "nida"
+   ],
+   "core": true
+  },
+  {
+   "id": "oholot",
+   "he": "אהלות",
+   "fr": "Oholot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "טומאה",
+    "אהל"
+   ],
+   "aliases": [
+    "ohilot",
+    "aholot"
+   ],
+   "core": true
+  },
+  {
+   "id": "orlah",
+   "he": "ערלה",
+   "fr": "Orlah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "orlah"
+   ],
+   "core": true
+  },
+  {
+   "id": "parah",
+   "he": "פרה",
+   "fr": "Parah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "פרה אדומה",
+    "טומאה"
+   ],
+   "aliases": [
+    "parah",
+    "para"
+   ],
+   "core": true
+  },
+  {
+   "id": "peah",
+   "he": "פאה",
+   "fr": "Peah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "peah",
+    "pe'a"
+   ],
+   "core": true
+  },
+  {
+   "id": "pesachim",
+   "he": "פסחים",
+   "fr": "Pesachim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "pesachim",
+    "pesahim"
+   ],
+   "core": true
+  },
+  {
+   "id": "rosh-hashanah",
+   "he": "ראש השנה",
+   "fr": "Rosh Hashanah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "rosh hashanah",
+    "rosh hashana",
+    "rosh hashonah"
+   ],
+   "core": true
+  },
+  {
+   "id": "sanhedrin",
+   "he": "סנהדרין",
+   "fr": "Sanhedrin",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "דיינים",
+    "עדות",
+    "עונש",
+    "דיני נפשות"
+   ],
+   "aliases": [
+    "sanhedrin",
+    "סנהדרין"
+   ],
+   "core": true
+  },
+  {
+   "id": "shabbat",
+   "he": "שבת",
+   "fr": "Shabbat",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "shabbat",
+    "shabbos",
+    "shabat",
+    "שבת"
+   ],
+   "core": true
+  },
+  {
+   "id": "shekalim",
+   "he": "שקלים",
+   "fr": "Shekalim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "shekalim",
+    "shkalim"
+   ],
+   "core": true
+  },
+  {
+   "id": "sheviit",
+   "he": "שביעית",
+   "fr": "Sheviit",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "sheviit",
+    "shevi'it"
+   ],
+   "core": true
+  },
+  {
+   "id": "shevuot",
+   "he": "שבועות",
+   "fr": "Shevuot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "שבועה",
+    "עדות",
+    "קרבן"
+   ],
+   "aliases": [
+    "shevuot",
+    "shevuos",
+    "shavuot"
+   ],
+   "core": true
+  },
+  {
+   "id": "sotah",
+   "he": "סוטה",
+   "fr": "Sotah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "sotah",
+    "sota"
+   ],
+   "core": true
+  },
+  {
+   "id": "sukkah",
+   "he": "סוכה",
+   "fr": "Sukkah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "sukkah",
+    "suka"
+   ],
+   "core": true
+  },
+  {
+   "id": "taanit",
+   "he": "תענית",
+   "fr": "Taanit",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "taanit",
+    "ta'anit",
+    "taanis"
+   ],
+   "core": true
+  },
+  {
+   "id": "tahorot",
+   "he": "טהרות",
+   "fr": "Tahorot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "טהרה"
+   ],
+   "aliases": [
+    "tahorot",
+    "taharot"
+   ],
+   "core": true
+  },
+  {
+   "id": "tamid",
+   "he": "תמיד",
+   "fr": "Tamid",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "קרבן תמיד",
+    "בית המקדש"
+   ],
+   "aliases": [
+    "tamid"
+   ],
+   "core": true
+  },
+  {
+   "id": "temurah",
+   "he": "תמורה",
+   "fr": "Temurah",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "תמורה",
+    "הקדש"
+   ],
+   "aliases": [
+    "temurah",
+    "tmura"
+   ],
+   "core": true
+  },
+  {
+   "id": "terumot",
+   "he": "תרומות",
+   "fr": "Terumot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "terumot",
+    "trumot"
+   ],
+   "core": true
+  },
+  {
+   "id": "tevul-yom",
+   "he": "טבול יום",
+   "fr": "Tevul Yom",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "tevul yom"
+   ],
+   "core": true
+  },
+  {
+   "id": "uktzim",
+   "he": "עוקצין",
+   "fr": "Uktzim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "uktzim",
+    "uktsin"
+   ],
+   "core": true
+  },
+  {
+   "id": "yadayim",
+   "he": "ידים",
+   "fr": "Yadayim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "yadayim"
+   ],
+   "core": true
+  },
+  {
+   "id": "yevamot",
+   "he": "יבמות",
+   "fr": "Yevamot",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "yevamot",
+    "yevamos"
+   ],
+   "core": true
+  },
+  {
+   "id": "yoma",
+   "he": "יומא",
+   "fr": "Yoma",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "yoma",
+    "yuma"
+   ],
+   "core": true
+  },
+  {
+   "id": "zavim",
+   "he": "זבים",
+   "fr": "Zavim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [],
+   "aliases": [
+    "zavim"
+   ],
+   "core": true
+  },
+  {
+   "id": "zevachim",
+   "he": "זבחים",
+   "fr": "Zevachim",
+   "cat": "Traités du Talmud",
+   "kind": "tractate",
+   "related": [
+    "קרבנות",
+    "מזבח",
+    "בית המקדש"
+   ],
+   "aliases": [
+    "zevachim",
+    "zvachim"
+   ],
+   "core": true
+  },
+  {
+   "id": "kodashim",
+   "he": "קדשים",
+   "fr": "Kodashim",
+   "cat": "Sedarim",
+   "kind": "seder",
+   "related": [],
+   "aliases": [
+    "kodashim"
+   ],
+   "core": false
+  },
+  {
+   "id": "moed",
+   "he": "מועד",
+   "fr": "Moed",
+   "cat": "Sedarim",
+   "kind": "seder",
+   "related": [],
+   "aliases": [
+    "moed"
+   ],
+   "core": false
+  },
+  {
+   "id": "nashim",
+   "he": "נשים",
+   "fr": "Nashim",
+   "cat": "Sedarim",
+   "kind": "seder",
+   "related": [],
+   "aliases": [
+    "nashim"
+   ],
+   "core": false
+  },
+  {
+   "id": "nezikin",
+   "he": "נזיקין",
+   "fr": "Nezikin",
+   "cat": "Sedarim",
+   "kind": "seder",
+   "related": [],
+   "aliases": [
+    "nezikin"
+   ],
+   "core": false
+  },
+  {
+   "id": "zeraim",
+   "he": "זרעים",
+   "fr": "Zeraim",
+   "cat": "Sedarim",
+   "kind": "seder",
+   "related": [],
+   "aliases": [
+    "zeraim"
+   ],
+   "core": false
+  },
+  {
+   "id": "aggada",
+   "he": "אגדה",
+   "fr": "Aggada",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "אגדתא"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "amora",
+   "he": "אמורא",
+   "fr": "Amora",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "אמוראים"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "baraita",
+   "he": "ברייתא",
+   "fr": "Baraïta",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "ברייתות"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "beit-hamikdash",
+   "he": "בית המקדש",
+   "fr": "Beit HaMikdash",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "מקדש"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "dayanim",
+   "he": "דיינים",
+   "fr": "Dayanim",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "דיין",
+    "בית דין"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "deoraita",
+   "he": "דאורייתא",
+   "fr": "Deoraita",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "מן התורה"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "derabanan",
+   "he": "דרבנן",
+   "fr": "Derabanan",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "מדרבנן"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "edout",
+   "he": "עדות",
+   "fr": "Edout",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "עדים"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "galut",
+   "he": "גלות",
+   "fr": "Galut",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "גולה"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "guemara",
+   "he": "גמרא",
+   "fr": "Guemara",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "תלמוד",
+    "תלמוד בבלי"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "halakha-lemoshe-misinai",
+   "he": "הלכה למשה מסיני",
+   "fr": "Halakha leMoshe miSinai",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hazaka",
+   "he": "חזקה",
+   "fr": "Hazaka",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "חזקות"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hekdesh",
+   "he": "הקדש",
+   "fr": "Hekdesh",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "heter",
+   "he": "היתר",
+   "fr": "Heter",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hiyuv",
+   "he": "חיוב",
+   "fr": "Hiyuv",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "issur",
+   "he": "איסור",
+   "fr": "Issur",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "kinyan",
+   "he": "קניין",
+   "fr": "Kinyan",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "קנין"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "korban",
+   "he": "קרבן",
+   "fr": "Korban",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "קרבנות"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "koushya",
+   "he": "קושיא",
+   "fr": "Koushya",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "קושיה"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mahaloket",
+   "he": "מחלוקת",
+   "fr": "Mahaloket",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "מחלוקות"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "malkot",
+   "he": "מלקות",
+   "fr": "Malkot",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mamon",
+   "he": "ממון",
+   "fr": "Mamon",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "ממונות"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mashiach",
+   "he": "משיח",
+   "fr": "Mashiach",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "matnitin",
+   "he": "מתניתין",
+   "fr": "Matnitin",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "משנה"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "midrash",
+   "he": "מדרש",
+   "fr": "Midrash",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "מדרשים"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mishna",
+   "he": "משנה",
+   "fr": "Mishna",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "מתניתין"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "miut",
+   "he": "מיעוט",
+   "fr": "Miut",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mussar",
+   "he": "מוסר",
+   "fr": "Mussar",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "olam-haba",
+   "he": "עולם הבא",
+   "fr": "Olam HaBa",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "parachat-hachavoua",
+   "he": "פרשת השבוע",
+   "fr": "Parachat haChavoua",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "פרשה"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "patur",
+   "he": "פטור",
+   "fr": "Patur",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "piroush-rachi",
+   "he": "פירוש רש״י",
+   "fr": "Piroush Rachi",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "רש״י"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "reaya",
+   "he": "ראיה",
+   "fr": "Reaya",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "הוכחה"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rov",
+   "he": "רוב",
+   "fr": "Rov",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "רובא"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "safek",
+   "he": "ספק",
+   "fr": "Safek",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "ספיקא"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "sakhar-veonesh",
+   "he": "שכר ועונש",
+   "fr": "Sakhar veOnesh",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "sougya",
+   "he": "סוגיא",
+   "fr": "Sougya",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "סוגיה"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "svara",
+   "he": "סברא",
+   "fr": "Svara",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "הגיון"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "taharah",
+   "he": "טהרה",
+   "fr": "Taharah",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tanna",
+   "he": "תנא",
+   "fr": "Tanna",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "תנאים"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tashlumin",
+   "he": "תשלומין",
+   "fr": "Tashlumin",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "תשלום"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "teshuva",
+   "he": "תשובה",
+   "fr": "Teshuva",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "חזרה בתשובה"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tirouz",
+   "he": "תירוץ",
+   "fr": "Tirouz",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "תירוץ"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tossefta",
+   "he": "תוספתא",
+   "fr": "Tossefta",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [
+    "תוספתא"
+   ],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tumah",
+   "he": "טומאה",
+   "fr": "Tumah",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "vadai",
+   "he": "ודאי",
+   "fr": "Vadai",
+   "cat": "Concepts talmudiques",
+   "kind": "concept",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "amar-lei",
+   "he": "אמר ליה",
+   "fr": "Amar lei",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "amri-bei-rav",
+   "he": "אמרי בי רב",
+   "fr": "Amri bei Rav",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "dahiya",
+   "he": "דחייה",
+   "fr": "Dahiya",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ela",
+   "he": "אלא",
+   "fr": "Ela",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hashta",
+   "he": "השתא",
+   "fr": "Hashta",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hashta-de-amrat",
+   "he": "השתא דאמרת",
+   "fr": "Hashta de'amrat",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "heikhi-dami",
+   "he": "היכי דמי",
+   "fr": "Heikhi dami",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hilkheta",
+   "he": "הלכתא",
+   "fr": "Hilkheta",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ibaya-lehou",
+   "he": "איבעיא להו",
+   "fr": "Ibaya lehou",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ika-beiniyeihu",
+   "he": "איכא בינייהו",
+   "fr": "Ika beiniyeihu",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ika-de-amri",
+   "he": "איכא דאמרי",
+   "fr": "Ika de'amri",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "itivyei",
+   "he": "איתיביה",
+   "fr": "Itivyei",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ka-salka-daatakh",
+   "he": "קא סלקא דעתך",
+   "fr": "Ka salka daatakh",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "kashya",
+   "he": "קשיא",
+   "fr": "Kashya",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "lav-davka",
+   "he": "לאו דווקא",
+   "fr": "Lav davka",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "lima",
+   "he": "לימא",
+   "fr": "Lima",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "lo-shanu-ela",
+   "he": "לא שנו אלא",
+   "fr": "Lo shanu ela",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mai-irya",
+   "he": "מאי איריא",
+   "fr": "Mai irya",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mai-taama",
+   "he": "מאי טעמא",
+   "fr": "Mai taama",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mativi",
+   "he": "מתיבי",
+   "fr": "Mativi",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "motiv",
+   "he": "מותיב",
+   "fr": "Motiv",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "pirka",
+   "he": "פרכא",
+   "fr": "Pirka",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "piruka",
+   "he": "פירוקא",
+   "fr": "Piruka",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "shinuyya",
+   "he": "שינוייא",
+   "fr": "Shinuyya",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "shmaiteta",
+   "he": "שמעתתא",
+   "fr": "Shmaiteta",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "siyua",
+   "he": "סיוע",
+   "fr": "Siyua",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ta-shema",
+   "he": "תא שמע",
+   "fr": "Ta shema",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tanu-rabanan",
+   "he": "תנו רבנן",
+   "fr": "Tanu rabanan",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tiku",
+   "he": "תיקו",
+   "fr": "Tiku",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "veha-amrinan",
+   "he": "והא אמרינן",
+   "fr": "VeHa amrinan",
+   "cat": "Araméen du Talmud",
+   "kind": "aramaic",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "aroukh-hashulhan",
+   "he": "ערוך השולחן",
+   "fr": "Aroukh HaShulhan",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "avelout",
+   "he": "אבלות",
+   "fr": "Avelout",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "beit-yossef",
+   "he": "בית יוסף",
+   "fr": "Beit Yossef",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ben-ish-hai",
+   "he": "בן איש חי",
+   "fr": "Ben Ish Hai",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "choulhan-aroukh",
+   "he": "שולחן ערוך",
+   "fr": "Choulhan Aroukh",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "erouv",
+   "he": "עירוב",
+   "fr": "Erouv",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "even-haezer",
+   "he": "אבן העזר",
+   "fr": "Even HaEzer",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hafets-haim",
+   "he": "חפץ חיים",
+   "fr": "Hafets Haim",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "halitsa",
+   "he": "חליצה",
+   "fr": "Halitsa",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hamets",
+   "he": "חמץ",
+   "fr": "Hamets",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hazon-ish",
+   "he": "חזון איש",
+   "fr": "Hazon Ish",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "hoshen-mishpat",
+   "he": "חושן משפט",
+   "fr": "Hoshen Mishpat",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "kasher",
+   "he": "כשר",
+   "fr": "Kasher",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "kashrout",
+   "he": "כשרות",
+   "fr": "Kashrout",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ketouba",
+   "he": "כתובה",
+   "fr": "Ketouba",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ktsot-hahoshen",
+   "he": "קצות החושן",
+   "fr": "Ktsot HaHoshen",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "magen-avraham",
+   "he": "מגן אברהם",
+   "fr": "Magen Avraham",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "matsa",
+   "he": "מצה",
+   "fr": "Matsa",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mezouza",
+   "he": "מזוזה",
+   "fr": "Mezouza",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mikve",
+   "he": "מקווה",
+   "fr": "Mikve",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "mishna-beroura",
+   "he": "משנה ברורה",
+   "fr": "Mishna Beroura",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "muktsa",
+   "he": "מוקצה",
+   "fr": "Muktsa",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "netilat-yadayim",
+   "he": "נטילת ידיים",
+   "fr": "Netilat Yadayim",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "netivot-hamishpat",
+   "he": "נתיבות המשפט",
+   "fr": "Netivot HaMishpat",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "orah-haim",
+   "he": "אורח חיים",
+   "fr": "Orah Haïm",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rama",
+   "he": "רמ״א",
+   "fr": "Rama",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "shakh",
+   "he": "ש״ך",
+   "fr": "Shakh",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "shehita",
+   "he": "שחיטה",
+   "fr": "Shehita",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "sma",
+   "he": "סמ״ע",
+   "fr": "Sma",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "taz",
+   "he": "ט״ז",
+   "fr": "Taz",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tefila",
+   "he": "תפילה",
+   "fr": "Tefila",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tefillin",
+   "he": "תפילין",
+   "fr": "Tefillin",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tour",
+   "he": "טור",
+   "fr": "Tour",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "trefa",
+   "he": "טרפה",
+   "fr": "Trefa",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "tsitsit",
+   "he": "ציצית",
+   "fr": "Tsitsit",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "yabia-omer",
+   "he": "יביע אומר",
+   "fr": "Yabia Omer",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "yehave-daat",
+   "he": "יחווה דעת",
+   "fr": "Yehave Daat",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "yerusha",
+   "he": "ירושה",
+   "fr": "Yerusha",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "yom-tov",
+   "he": "יום טוב",
+   "fr": "Yom Tov",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "yoreh-deah",
+   "he": "יורה דעה",
+   "fr": "Yoreh Deah",
+   "cat": "Halakha",
+   "kind": "halakha",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "avnei-miluim",
+   "he": "אבני מילואים",
+   "fr": "Avnei Miluim",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "maharam",
+   "he": "מהר״ם",
+   "fr": "Maharam",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "maharam"
+   ],
+   "core": true
+  },
+  {
+   "id": "maharsha",
+   "he": "מהרש״א",
+   "fr": "Maharsha",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "maharsha"
+   ],
+   "core": true
+  },
+  {
+   "id": "maharshal",
+   "he": "מהרש״ל",
+   "fr": "Maharshal",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "maharshal"
+   ],
+   "core": true
+  },
+  {
+   "id": "pnei-yehoshua",
+   "he": "פני יהושע",
+   "fr": "Pnei Yehoshua",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "pri-megadim",
+   "he": "פרי מגדים",
+   "fr": "Pri Megadim",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rachi",
+   "he": "רש״י",
+   "fr": "Rachi",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "rashi",
+    "רשי"
+   ],
+   "core": true
+  },
+  {
+   "id": "rambam",
+   "he": "רמב״ם",
+   "fr": "Rambam",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "rambam",
+    "רמבם"
+   ],
+   "core": true
+  },
+  {
+   "id": "ramban",
+   "he": "רמב״ן",
+   "fr": "Ramban",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "ramban",
+    "רמבן"
+   ],
+   "core": true
+  },
+  {
+   "id": "rashba",
+   "he": "רש״ב",
+   "fr": "Rashba",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "rashba"
+   ],
+   "core": true
+  },
+  {
+   "id": "rif",
+   "he": "רי״ף",
+   "fr": "Rif",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "rif"
+   ],
+   "core": true
+  },
+  {
+   "id": "rosh",
+   "he": "רא״ש",
+   "fr": "Rosh",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "rosh"
+   ],
+   "core": true
+  },
+  {
+   "id": "tossafot",
+   "he": "תוספות",
+   "fr": "Tossafot",
+   "cat": "Rishonim & Acharonim",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "tosafot",
+    "tossafot",
+    "תוספות"
+   ],
+   "core": true
+  },
+  {
+   "id": "abaye",
+   "he": "אביי",
+   "fr": "Abaye",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabba",
+   "he": "רבה",
+   "fr": "Rabba",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabban-gamliel",
+   "he": "רבן גמליאל",
+   "fr": "Rabban Gamliel",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabbi-akiva",
+   "he": "רבי עקיבא",
+   "fr": "Rabbi Akiva",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [
+    "rabbi akiva"
+   ],
+   "core": true
+  },
+  {
+   "id": "rabbi-elazar",
+   "he": "רבי אלעזר",
+   "fr": "Rabbi Elazar",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabbi-meir",
+   "he": "רבי מאיר",
+   "fr": "Rabbi Meir",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabbi-shimon",
+   "he": "רבי שמעון",
+   "fr": "Rabbi Shimon",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabbi-yehuda",
+   "he": "רבי יהודה",
+   "fr": "Rabbi Yehuda",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabbi-yishmael",
+   "he": "רבי ישמעאל",
+   "fr": "Rabbi Yishmael",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabbi-yohanan",
+   "he": "רבי יוחנן",
+   "fr": "Rabbi Yohanan",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rabbi-yossi",
+   "he": "רבי יוסי",
+   "fr": "Rabbi Yossi",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rami-bar-hama",
+   "he": "רמי בר חמא",
+   "fr": "Rami bar Hama",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rav",
+   "he": "רב",
+   "fr": "Rav",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rav-ashi",
+   "he": "רב אשי",
+   "fr": "Rav Ashi",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rav-hisda",
+   "he": "רב חסדא",
+   "fr": "Rav Hisda",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rav-huna",
+   "he": "רב הונא",
+   "fr": "Rav Huna",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rav-nahman",
+   "he": "רב נחמן",
+   "fr": "Rav Nahman",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rav-papa",
+   "he": "רב פפא",
+   "fr": "Rav Papa",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rav-yosef",
+   "he": "רב יוסף",
+   "fr": "Rav Yosef",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "rava",
+   "he": "רבא",
+   "fr": "Rava",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "ravina",
+   "he": "רבינא",
+   "fr": "Ravina",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "reish-lakish",
+   "he": "ריש לקיש",
+   "fr": "Reish Lakish",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "shmuel",
+   "he": "שמואל",
+   "fr": "Shmuel",
+   "cat": "Tannaïm & Amoraïm",
+   "kind": "person",
+   "related": [],
+   "aliases": [],
+   "core": true
+  },
+  {
+   "id": "amah",
+   "he": "אמה",
+   "fr": "Amah",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "dinar",
+   "he": "דינר",
+   "fr": "Dinar",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "hin",
+   "he": "הין",
+   "fr": "Hin",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "issar",
+   "he": "איסר",
+   "fr": "Issar",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "kav",
+   "he": "קב",
+   "fr": "Kav",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "kikar",
+   "he": "ככר",
+   "fr": "Kikar",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "kotevet",
+   "he": "כותבת",
+   "fr": "Kotevet",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "log",
+   "he": "לוג",
+   "fr": "Log",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "maneh",
+   "he": "מנה",
+   "fr": "Maneh",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "mil",
+   "he": "מיל",
+   "fr": "Mil",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "omer",
+   "he": "עומר",
+   "fr": "Omer",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "prouta",
+   "he": "פרוטה",
+   "fr": "Prouta",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "ris",
+   "he": "ריס",
+   "fr": "Ris",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "seah",
+   "he": "סאה",
+   "fr": "Seah",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "sela",
+   "he": "סלע",
+   "fr": "Sela",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "tarkav",
+   "he": "תרקב",
+   "fr": "Tarkav",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "tefah",
+   "he": "טפח",
+   "fr": "Tefah",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "zeret",
+   "he": "זרת",
+   "fr": "Zeret",
+   "cat": "Mesures",
+   "kind": "measure",
+   "related": [],
+   "aliases": [],
+   "core": false
+  },
+  {
+   "id": "aharei-mot",
+   "he": "אחרי מות",
+   "fr": "Aharei Mot",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "aharei mot"
+   ],
+   "core": false
+  },
+  {
+   "id": "balak",
+   "he": "בלק",
+   "fr": "Balak",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "balak"
+   ],
+   "core": false
+  },
+  {
+   "id": "bamidbar",
+   "he": "במדבר",
+   "fr": "Bamidbar",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "bamidbar"
+   ],
+   "core": false
+  },
+  {
+   "id": "behaalotekha",
+   "he": "בהעלותך",
+   "fr": "Behaalotekha",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "behaalotekha"
+   ],
+   "core": false
+  },
+  {
+   "id": "behar",
+   "he": "בהר",
+   "fr": "Behar",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "behar"
+   ],
+   "core": false
+  },
+  {
+   "id": "behukotai",
+   "he": "בחוקותי",
+   "fr": "Behukotai",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "behukotai"
+   ],
+   "core": false
+  },
+  {
+   "id": "bereshit",
+   "he": "בראשית",
+   "fr": "Bereshit",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "bereshit"
+   ],
+   "core": false
+  },
+  {
+   "id": "beshalah",
+   "he": "בשלח",
+   "fr": "Beshalah",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "beshalah"
+   ],
+   "core": false
+  },
+  {
+   "id": "bo",
+   "he": "בא",
+   "fr": "Bo",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "bo"
+   ],
+   "core": false
+  },
+  {
+   "id": "devarim",
+   "he": "דברים",
+   "fr": "Devarim",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "devarim"
+   ],
+   "core": false
+  },
+  {
+   "id": "ekev",
+   "he": "עקב",
+   "fr": "Ekev",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "ekev"
+   ],
+   "core": false
+  },
+  {
+   "id": "emor",
+   "he": "אמור",
+   "fr": "Emor",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "emor"
+   ],
+   "core": false
+  },
+  {
+   "id": "haazinu",
+   "he": "האזינו",
+   "fr": "Haazinu",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "haazinu"
+   ],
+   "core": false
+  },
+  {
+   "id": "hayei-sarah",
+   "he": "חיי שרה",
+   "fr": "Hayei Sarah",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "hayei sarah"
+   ],
+   "core": false
+  },
+  {
+   "id": "hukat",
+   "he": "חוקת",
+   "fr": "Hukat",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "hukat"
+   ],
+   "core": false
+  },
+  {
+   "id": "kedoshim",
+   "he": "קדושים",
+   "fr": "Kedoshim",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "kedoshim"
+   ],
+   "core": false
+  },
+  {
+   "id": "ki-tavo",
+   "he": "כי תבוא",
+   "fr": "Ki Tavo",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "ki tavo"
+   ],
+   "core": false
+  },
+  {
+   "id": "ki-tetse",
+   "he": "כי תצא",
+   "fr": "Ki Tetse",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "ki tetse"
+   ],
+   "core": false
+  },
+  {
+   "id": "ki-tisa",
+   "he": "כי תשא",
+   "fr": "Ki Tisa",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "ki tisa"
+   ],
+   "core": false
+  },
+  {
+   "id": "korah",
+   "he": "קרח",
+   "fr": "Korah",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "korah"
+   ],
+   "core": false
+  },
+  {
+   "id": "lekh-lekha",
+   "he": "לך לך",
+   "fr": "Lekh Lekha",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "lekh lekha"
+   ],
+   "core": false
+  },
+  {
+   "id": "masei",
+   "he": "מסעי",
+   "fr": "Masei",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "masei"
+   ],
+   "core": false
+  },
+  {
+   "id": "matot",
+   "he": "מטות",
+   "fr": "Matot",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "matot"
+   ],
+   "core": false
+  },
+  {
+   "id": "metsora",
+   "he": "מצורע",
+   "fr": "Metsora",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "metsora"
+   ],
+   "core": false
+  },
+  {
+   "id": "mikets",
+   "he": "מקץ",
+   "fr": "Mikets",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "mikets"
+   ],
+   "core": false
+  },
+  {
+   "id": "mishpatim",
+   "he": "משפטים",
+   "fr": "Mishpatim",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "mishpatim"
+   ],
+   "core": false
+  },
+  {
+   "id": "naso",
+   "he": "נשא",
+   "fr": "Naso",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "naso"
+   ],
+   "core": false
+  },
+  {
+   "id": "nitsavim",
+   "he": "ניצבים",
+   "fr": "Nitsavim",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "nitsavim"
+   ],
+   "core": false
+  },
+  {
+   "id": "noah",
+   "he": "נח",
+   "fr": "Noah",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "noah"
+   ],
+   "core": false
+  },
+  {
+   "id": "pekudei",
+   "he": "פקודי",
+   "fr": "Pekudei",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "pekudei"
+   ],
+   "core": false
+  },
+  {
+   "id": "pinhas",
+   "he": "פינחס",
+   "fr": "Pinhas",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "pinhas"
+   ],
+   "core": false
+  },
+  {
+   "id": "reeh",
+   "he": "ראה",
+   "fr": "Reeh",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "reeh"
+   ],
+   "core": false
+  },
+  {
+   "id": "shelah",
+   "he": "שלח",
+   "fr": "Shelah",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "shelah"
+   ],
+   "core": false
+  },
+  {
+   "id": "shemini",
+   "he": "שמיני",
+   "fr": "Shemini",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "shemini"
+   ],
+   "core": false
+  },
+  {
+   "id": "shemot",
+   "he": "שמות",
+   "fr": "Shemot",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "shemot"
+   ],
+   "core": false
+  },
+  {
+   "id": "shoftim",
+   "he": "שופטים",
+   "fr": "Shoftim",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "shoftim"
+   ],
+   "core": false
+  },
+  {
+   "id": "tazria",
+   "he": "תזריע",
+   "fr": "Tazria",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "tazria"
+   ],
+   "core": false
+  },
+  {
+   "id": "teruma",
+   "he": "תרומה",
+   "fr": "Teruma",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "teruma"
+   ],
+   "core": false
+  },
+  {
+   "id": "tetsave",
+   "he": "תצוה",
+   "fr": "Tetsave",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "tetsave"
+   ],
+   "core": false
+  },
+  {
+   "id": "toldot",
+   "he": "תולדות",
+   "fr": "Toldot",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "toldot"
+   ],
+   "core": false
+  },
+  {
+   "id": "tsav",
+   "he": "צו",
+   "fr": "Tsav",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "tsav"
+   ],
+   "core": false
+  },
+  {
+   "id": "vaera",
+   "he": "וארא",
+   "fr": "Vaera",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vaera"
+   ],
+   "core": false
+  },
+  {
+   "id": "vaetchanan",
+   "he": "ואתחנן",
+   "fr": "Vaetchanan",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vaetchanan"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayakhel",
+   "he": "ויקהל",
+   "fr": "Vayakhel",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayakhel"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayehi",
+   "he": "ויחי",
+   "fr": "Vayehi",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayehi"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayelekh",
+   "he": "וילך",
+   "fr": "Vayelekh",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayelekh"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayera",
+   "he": "וירא",
+   "fr": "Vayera",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayera"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayeshev",
+   "he": "וישב",
+   "fr": "Vayeshev",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayeshev"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayetse",
+   "he": "ויצא",
+   "fr": "Vayetse",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayetse"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayigash",
+   "he": "ויגש",
+   "fr": "Vayigash",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayigash"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayikra",
+   "he": "ויקרא",
+   "fr": "Vayikra",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayikra"
+   ],
+   "core": false
+  },
+  {
+   "id": "vayishlah",
+   "he": "וישלח",
+   "fr": "Vayishlah",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vayishlah"
+   ],
+   "core": false
+  },
+  {
+   "id": "vezot-haberakha",
+   "he": "וזאת הברכה",
+   "fr": "Vezot Haberakha",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "vezot haberakha"
+   ],
+   "core": false
+  },
+  {
+   "id": "yitro",
+   "he": "יתרו",
+   "fr": "Yitro",
+   "cat": "Parachiot",
+   "kind": "parsha",
+   "related": [
+    "פרשת השבוע"
+   ],
+   "aliases": [
+    "yitro"
+   ],
+   "core": false
+  }
+ ]
+}

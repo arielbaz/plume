@@ -250,8 +250,19 @@ fn export_job(id: String, format: String, state: State<'_, AppState>) -> Result<
 }
 
 #[tauri::command]
-fn reveal(path: String) -> Result<(), String> {
-    reveal_path(Path::new(&path)).map_err(|e| e.to_string())
+fn reveal(app: AppHandle, path: String) -> Result<(), String> {
+    #[cfg(desktop)]
+    {
+        let _ = &app;
+        reveal_path(Path::new(&path)).map_err(|e| e.to_string())
+    }
+    #[cfg(mobile)]
+    {
+        use tauri_plugin_opener::OpenerExt;
+        app.opener()
+            .open_path(&path, None::<&str>)
+            .map_err(|e| e.to_string())
+    }
 }
 
 #[tauri::command]

@@ -2,6 +2,7 @@
   "use strict";
 
   const invoke = window.__TAURI__.core.invoke;
+  const isAndroid = /Android/i.test(navigator.userAgent);
   const $ = (sel, root = document) => root.querySelector(sel);
 
   const state = {
@@ -491,7 +492,7 @@
             </button>
             <button class="icon-action" data-act="reveal" data-id="${job.id}" type="button">
               <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H10l2 2h6.5A2.5 2.5 0 0 1 21 9.5v8A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5Z"/></svg>
-              Finder
+              ${isAndroid ? "Ouvrir" : "Finder"}
             </button>
           </div>
         </div>
@@ -514,7 +515,7 @@
         <div class="transcript-wrap"><div class="transcript">${transcript}</div></div>
         <div class="result-foot">
           <span title="${escapeHtml(docx || "")}">${docx ? "Word et texte enregistrés dans " + escapeHtml(baseName(docx)) : "Export disponible ci-dessus"}</span>
-          <button data-act="openout" type="button">Ouvrir le dossier</button>
+          ${isAndroid ? "" : '<button data-act="openout" type="button">Ouvrir le dossier</button>'}
         </div>
       </div>`;
     setupPlayer(job);

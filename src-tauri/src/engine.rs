@@ -40,7 +40,12 @@ pub fn transcribe(
         .unwrap_or(4)
         .clamp(2, 8) as i32;
 
-    let mut params = FullParams::new(SamplingStrategy::Greedy { best_of: 5 });
+    // Beam search : plus lent qu'une décodage glouton, mais nettement plus
+    // stable sur les phrases longues et les termes hébreux/araméens.
+    let mut params = FullParams::new(SamplingStrategy::BeamSearch {
+        beam_size: 5,
+        patience: -1.0,
+    });
     params.set_n_threads(threads);
     params.set_translate(false);
     params.set_print_special(false);

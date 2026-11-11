@@ -44,9 +44,9 @@ un MP3 de téléphone, un enregistrement Zoom…) et rend un document prêt à �
 
 ## Télécharger
 
-- **macOS (Apple Silicon)** : [Plume-0.2.0-arm64.dmg](https://github.com/arielbaz/plume/releases/download/v0.2.0/Plume-0.2.0-arm64.dmg)
-- **Windows** : [installateur .exe](https://github.com/arielbaz/plume/releases/download/v0.2.0/Plume_0.2.0_x64-setup.exe)
-  ou [paquet .msi](https://github.com/arielbaz/plume/releases/download/v0.2.0/Plume_0.2.0_x64_en-US.msi)
+- **macOS (Apple Silicon)** : [Plume-0.3.0-arm64.dmg](https://github.com/arielbaz/plume/releases/download/v0.3.0/Plume-0.3.0-arm64.dmg)
+- **Windows** : [installateur .exe](https://github.com/arielbaz/plume/releases/download/v0.3.0/Plume_0.3.0_x64-setup.exe)
+  ou [paquet .msi](https://github.com/arielbaz/plume/releases/download/v0.3.0/Plume_0.3.0_x64_en-US.msi)
 - **Toutes les versions** : [github.com/arielbaz/plume/releases](https://github.com/arielbaz/plume/releases)
 - **Article de présentation** : [aribaz.com/articles/plume.html](https://aribaz.com/articles/plume.html)
 
@@ -119,6 +119,19 @@ Le glossaire et les corrections compensent une partie de ces limites. Une détec
 de langue par segment (pour basculer automatiquement entre hébreu et français) est
 le prochain chantier naturel ; voir [docs/FINETUNING.md](docs/FINETUNING.md) pour
 les autres pistes.
+
+## Précision : ce qui est mis en œuvre
+
+- **Large v3 Turbo** par défaut, le modèle Whisper le plus solide en hébreu.
+- **Beam search (5 faisceaux)** au lieu d'un décodage glouton : sorties plus
+  stables sur les phrases longues et les termes techniques.
+- **Normalisation audio** : suppression de l'offset DC et calibrage du niveau
+  avant l'ASR, sans modifier la durée (le lecteur reste synchronisé).
+- **Contexte de domaine** : preset Guemara/Torah/Daf, traité et page détectés,
+  termes liés, glossaire et termes techniques.
+- **Apprentissage** : corrections acceptées réappliquées, termes mémorisés.
+- **Signalement des mots incertains** avec suggestion issue du lexique.
+- **Modèle affiné** importable pour aller plus loin.
 
 ## Modèles
 

@@ -1,6 +1,6 @@
 [package]
 name = "plume"
-version = "0.2.0"
+version = "0.3.0"
 description = "Plume — transcription locale de fichiers audio en texte et Word"
 authors = ["Plume"]
 edition = "2021"

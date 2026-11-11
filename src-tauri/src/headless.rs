@@ -77,7 +77,7 @@ fn run(args: &[String]) -> Result<()> {
     }
 
     eprintln!("Lecture de {}…", path.display());
-    let samples = audio::decode_audio_file(&path)?;
+    let samples = audio::normalize_for_asr(audio::decode_audio_file(&path)?);
     let duration = audio::duration_secs(&samples);
     eprintln!("Durée : {:.1} s", duration);
 

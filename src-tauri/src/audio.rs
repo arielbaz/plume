@@ -309,3 +309,27 @@ pub fn playback_path(id: &str) -> Option<PathBuf> {
                 .unwrap_or(false)
         })
 }
+
+
+/// Normalise le niveau avant l'ASR : supprime l'offset DC et ramène le pic
+/// à 0,95. Cela évite qu'un enregistrement trop faible soit mal décodé, sans
+/// modifier la durée (le lecteur reste synchronisé).
+pub fn normalize_for_asr(mut samples: Vec<f32>) -> Vec<f32> {
+    if samples.is_empty() {
+        return samples;
+    }
+    let mean = samples.iter().sum::<f32>() / samples.len() as f32;
+    for s in &mut samples {
+        *s -= mean;
+    }
+    let peak = samples.iter().fold(0.0f32, |m, s| m.max(s.abs()));
+    if peak > 0.0001 {
+        let gain = (0.95 / peak).clamp(0.5, 8.0);
+        if (gain - 1.0).abs() > 0.01 {
+            for s in &mut samples {
+                *s = (*s * gain).clamp(-1.0, 1.0);
+            }
+        }
+    }
+    samples
+}

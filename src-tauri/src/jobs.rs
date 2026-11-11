@@ -204,7 +204,7 @@ fn run_job(jobs: &Jobs, req: JobRequest, cache: &mut Option<(String, WhisperCont
             j.progress = 2.0;
         });
 
-        let samples = audio::decode_audio_file(&req.path)?;
+        let samples = audio::normalize_for_asr(audio::decode_audio_file(&req.path)?);
         let duration = audio::duration_secs(&samples);
         if duration < 0.15 {
             return Err(anyhow!("Le fichier audio est vide ou trop court"));

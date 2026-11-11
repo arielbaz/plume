@@ -8,3 +8,8 @@ src-tauri/gen/
 .DS_Store
 
 dist/
+__pycache__/
+.pytest_cache/
+talmud_scribe/.downloads/
+talmud_scribe/calibration/feuille_guide.png
+talmud_scribe/calibration/profile.json

@@ -1,0 +1,14 @@
+# Cœur (obligatoire)
+faster-whisper>=1.0.3     # ASR CTranslate2, int8 sur CPU
+python-docx>=1.1.0        # génération .docx
+numpy>=1.26
+Pillow>=10.0
+
+# Recommandé
+opencv-python-headless>=4.9   # binarisation/déskew de qualité (repli Pillow/numpy sinon)
+pytesseract>=0.3.10           # OCR (nécessite le binaire Tesseract + heb.traineddata, fra.traineddata)
+pydub>=0.25                   # découpe/normalisation audio (nécessite ffmpeg)
+
+# Optionnel
+yt-dlp>=2024.8.6              # téléchargement audio depuis une URL
+pytest>=8.0                   # tests

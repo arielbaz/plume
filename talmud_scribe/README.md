@@ -23,6 +23,10 @@ Modèles : `tiny|base|small|medium|large-v3-turbo|ivrit-turbo|ivrit-large`. Sur 
 avec `small`, réservez `ivrit-turbo` (≈1,6 Go en int8) aux enregistrements importants.
 Les résultats sont mis en cache (`~/.cache/talmud_scribe`) : relancer ne retraite rien.
 
+> **Test à faire :** les modèles `ivrit-*` sont affinés sur l'hébreu. Sur un cours surtout en français,
+> comparez-les à `small`/`medium` avec `--lang fr`, `--lang he` et `--lang auto` sur votre patron
+> (`python main.py calibrate-asr --models small medium ivrit-turbo`).
+
 ## Calibration par patrons (facultative, à chaque lancement)
 
 Aucun patron n'est requis : sans option, l'outil utilise le vocabulaire par défaut.
